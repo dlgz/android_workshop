@@ -54,7 +54,7 @@ public class MyAdapter extends BaseAdapter{
         TextView detailTextView = (TextView) objView.findViewById(R.id.textView3);
         detailTextView.setText(detailStrings[position]);
 
-        //for ico
+        //for icon
         ImageView iconImageView = (ImageView) objView.findViewById(R.id.imageView);
         iconImageView.setImageResource(iconInts[position]);
 

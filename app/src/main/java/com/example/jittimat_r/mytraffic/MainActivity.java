@@ -34,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         //Button Controller
         buttonController();
 
+        // ListViewController
+        ListViewController();
     } // Main Method
 
     private void ListViewController() {
@@ -72,6 +74,11 @@ public class MainActivity extends AppCompatActivity {
         strTitle[17] = "หัวข้อที่ 18";
         strTitle[18] = "หัวข้อที่ 19";
         strTitle[19] = "หัวข้อที่ 20";
+
+        //array type 3
+        String[] strDetail = getResources().getStringArray(R.array.detail_short);
+        MyAdapter objMyAdapter = new MyAdapter(MainActivity.this, strTitle, strDetail, intIcon);
+        trafficListView.setAdapter(objMyAdapter);
 
 
     } // ListViewController
